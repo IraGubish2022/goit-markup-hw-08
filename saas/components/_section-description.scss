@@ -5,5 +5,9 @@
     letter-spacing: 0.03em;
     color: var(--contacts-color);
     margin-bottom: 9px;
+
+    @media screen and (min-width: 1200px) {
+      @include font(14px, 400, 24px);
+    }
     }
   

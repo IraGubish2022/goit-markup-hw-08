@@ -1,5 +1,5 @@
 .hero {
-    padding: 200px 0;
+    padding: 118px 0;
     background: #2f303a;
     max-width: 1600px;
     margin-left: auto;
@@ -10,8 +10,9 @@
       url("../images/hero/mobile.jpg");
     background-size: cover;
     background-color: #c4c4c4;
-    @media screen and (min-width: 480px) {
-      padding: 118px 0;
+    
+    @media screen and (min-width: 1200px) {
+      padding: 200px 0;
     }
   }
   
