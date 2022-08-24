@@ -36,16 +36,14 @@
               <a class="menu__link link" href="">Контакти</a>
             </li>
           </ul>
-          <button type="button" class="btn-mobile is-open" aria-expanded="false">
-            <svg width="40" heigh="40" 
-            aria-label="Перемиикач мобільного меню">
-              <use class="icon-cross" href="./images/sprite.svg#icon-close_40px"></use>
-              <use class="icon-menu" href="./images/sprite.svg#icon-menu_40px"></use>
-            </svg>
-          </button>
         </nav>
+        <button type="button" class="mobile-menu-open" data-menu-open>
+          <svg class="mobile-menu-open__icon" width="40" height="40">
+            <use class="icon-menu" href="./images/sprite.svg#icon-menu_40px"></use>
+          </svg>
+        </button>
         <ul class="list navigation list-contacts menu">
-          <li class="menu__item">
+          <li class="navigation__item">
             <div class="logo-contacts">
               <a class="contacts link" href="mailto:info@devstudio.com">
                 <svg class="contacts__logo" width="16" height="12">
@@ -53,7 +51,7 @@
                 </svg>info@devstudio.com</a>
             </div>
           </li>
-          <li class="menu__item">
+          <li class="navigation__item">
             <div class="logo-contacts">
               <a class="contacts link" href="tel:+380961111111">
                 <svg class="contacts__logo" width="10" height="16">
@@ -62,6 +60,40 @@
             </div>
           </li>
         </ul>
+      </div>
+      <div class="mobile-menu" data-menu>
+        <div class="mobile-menu__container">
+          <button class="mobile-menu__close-btn" data-menu-close>
+            <svg class="mobile-menu__close-icon" width="40" height="40">
+              <use href="./images/sprite.svg#icon-modal-close"></use>
+            </svg>
+          </button>
+          <ul class="list checklist">
+            <li class="checklist__item link">
+              <a href="./index.html">Студія</a>
+            </li>
+            <li class="checklist__item link">
+              <a href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="checklist__item">
+              <a>Контакти</a>
+            </li>
+          </ul>
+          <ul class="info list">
+            <li class="info__item link">
+              <a class="" href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
+            <li class="info__item link">
+              <a class="" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+          </ul>
+          <ul class="media list">
+            <li class="media__item">Instagram <span class="media__link">|</span></li>
+            <li class="media__item">Twitter <span class="media__link">|</span></li>
+            <li class="media__item">Facebook <span class="media__link">|</span></li>
+            <li class="media__item">LinkedIn</li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -186,12 +218,24 @@
           <h2 class="section__heading">Наша команда</h2>
           <ul class="list grid">
             <li class="grid__list">
-              <img
-                src="./images/employers/product-designer.jpg"
+              <picture>
+                <source 
+                srcset="./images/employers/designer-desktop.jpg 1x, ./images/employers/designer-desktop@2x.jpg 2x"
+                media="(min-width: 1200px)"
+                />
+                <source 
+                srcset="./images/employers/designer-tablet.jpg 1x, ./images/employers/designer-tablet@2x.jpg 2x "
+                media="(min-width: 768px)"
+                />
+                <source 
+                srcset="./images/employers/designer-mobile.jpg 1x, ./images/employers/designer-mobile@2x.jpg 2x "
+                media="(min-width: 280px)"
+                />
+                <img
+                src="./images/employers/designer-mobile.jpg"
                 alt="Фото 1"
-                width="270"
-                height="260"
               />
+              </picture>
               <div class="text-box">
                 <h3 class="subtitle">Игорь Демьяненко</h3>
                 <p class="section-description about" lang="en">
@@ -230,12 +274,24 @@
               </div>
             </li>
             <li class="grid__list">
-              <img
-                src="./images/employers/frontend-developer.jpg"
+              <picture>
+                <source 
+                srcset="./images/employers/frontend-desktop.jpg 1x, ./images/employers/frontend-desktop@2x.jpg 2x"
+                media="(min-width: 1200px)"
+                />
+                <source 
+                srcset="./images/employers/frontend-tablet.jpg 1x, ./images/employers/frontend-tablet@2x.jpg 2x "
+                media="(min-width: 768px)"
+                />
+                <source 
+                srcset="./images/employers/frontend-mobile.jpg 1x, ./images/employers/frontend-mobile@2x.jpg 2x "
+                media="(min-width: 280px)"
+                />
+                <img
+                src="./images/employers/frontend-mobile.jpg"
                 alt="Фото 2"
-                width="270"
-                height="260"
               />
+              </picture>
               <div class="text-box">
                 <h3 class="subtitle">Ольга Репина</h3>
                 <p class="section-description about" lang="en">
@@ -274,12 +330,24 @@
               </div>
             </li>
             <li class="grid__list">
-              <img
-                src="./images/employers/marketing.jpg"
+              <picture>
+                <source 
+                srcset="./images/employers/marketing-desktop.jpg 1x, ./images/employers/marketing-desktop@2x.jpg 2x"
+                media="(min-width: 1200px)"
+                />
+                <source 
+                srcset="./images/employers/marketing-tablet.jpg 1x, ./images/employers/marketing-tablet@2x.jpg 2x "
+                media="(min-width: 768px)"
+                />
+                <source 
+                srcset="./images/employers/marketing-mobile.jpg 1x, ./images/employers/marketing-mobile@2x.jpg 2x "
+                media="(min-width: 280px)"
+                />
+                <img
+                src="./images/employers/marketing-mobile.jpg"
                 alt="Фото 3"
-                width="270"
-                height="260"
               />
+              </picture>
               <div class="text-box">
                 <h3 class="subtitle">Николай Тарасов</h3>
                 <p class="section-description about" lang="en">Marketing</p>
@@ -316,12 +384,24 @@
               </div>
             </li>
             <li class="grid__list">
-              <img
-                src="./images/employers/ui-designer.jpg"
+              <picture>
+                <source 
+                srcset="./images/employers/ui-desktop.jpg 1x, ./images/employers/ui-desktop@2x.jpg 2x"
+                media="(min-width: 1200px)"
+                />
+                <source 
+                srcset="./images/employers/ui-tablet.jpg 1x, ./images/employers/ui-tablet@2x.jpg 2x "
+                media="(min-width: 768px)"
+                />
+                <source 
+                srcset="./images/employers/ui-mobile.jpg 1x, ./images/employers/ui-mobile@2x.jpg 2x "
+                media="(min-width: 280px)"
+                />
+                <img
+                src="./images/employers/ui-mobile.jpg"
                 alt="Фото 4"
-                width="270"
-                height="260"
               />
+              </picture>
               <div class="text-box">
                 <h3 class="subtitle">Михаил Ермаков</h3>
                 <p class="section-description about" lang="en">UI Designer</p>
@@ -569,6 +649,7 @@
         </form>
       </div>
   </div>
+  <script src="./js/mobile-menu.js"></script>
   <script src="./js/modal.js"></script>
   </body>
 </html>

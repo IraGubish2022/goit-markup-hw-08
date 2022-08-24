@@ -1,7 +1,21 @@
 .footer-form {
-    display: flex;
-    align-items: end;
+     display: block;
+     margin-top: 60px;
+     margin-left: auto;
+     margin-right: auto;
+
+    @media screen and (min-width: 768px) {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     width: 100%;
+    }
+
+    @media screen and (min-width: 1200px) {
+     display: flex;
+     align-items: end;
     margin-left: 93px;
+    }
   }
   .footer-form-field {
     width: 358px;
@@ -16,6 +30,12 @@
     text-transform: uppercase;
     color: var(--secondary-color);
     margin-bottom: 20px;
+
+    @media screen and (min-width: 480px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
   .footer-form-input-wrapper {
     min-width: 358px;
@@ -35,6 +55,10 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     background-color: transparent;
+
+    @media screen and (min-width: 480px) {
+      justify-content: center;
+    }
   }
   .footer-btn-send {
     min-width: 200px;
@@ -54,6 +78,13 @@
     &:hover,
     &:focus {
     background-color: #188ce8;
+  }
+
+  @media screen and (min-width: 480px) {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
   }
   }
   .footer-btn-send-icon {
