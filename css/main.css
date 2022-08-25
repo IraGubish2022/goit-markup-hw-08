@@ -213,6 +213,15 @@ body {
   .info__item:last-child {
     padding-bottom: 64px;
   }
+  .info__item-grey {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    color: #757575;
+  }
   .media {
     display: flex;
   }
@@ -301,7 +310,8 @@ body {
 .case {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: start;
+  gap: 15px;
 }
 @media screen and (min-width: 768px) {
   .case {
