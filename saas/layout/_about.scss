@@ -6,7 +6,7 @@
       padding-bottom: 94px;
     }
   }
-  .case__link {
+  .content__link {
     //width: 270px;//
     //margin-right: 30px;//
     //&:nth-child(4n) {
@@ -27,22 +27,22 @@
     }
   }
 @media screen and (max-width: 1199px) {
-  .case__link:last-child {
+  .content__link:last-child {
     margin-bottom: 60px;
   }
 }
-  .case__item {
+  .content__item {
     display: block;
     text-align: start;
   }
-  .case__thumb {
+  .content__thumb {
     height: 120px;
     border-radius: 4px;
     background-color: #f5f4fa;
     margin-bottom: 30px;
     @extend %align;
   }
-  .case__title {
+  .content__title {
     font-family: var(--primary-font);
     font-style: normal;
     @include font(14px, 700, 16px);
@@ -56,12 +56,26 @@
       text-align: center;
     }
   }
-  .case__descr {
+  .content__descr {
     font-family: var(--primary-font);
     font-style: normal;
     @include font(14px, 400, 24px);
     letter-spacing: 0.03em;
     color: var(--contacts-color);
+  }
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @media screen and (min-width: 768px) {
+      margin: -30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin: -15px;
+      flex-wrap: nowrap;
+    }
   }
   .action {
     position: absolute;
