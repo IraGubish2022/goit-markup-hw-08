@@ -52,24 +52,20 @@
 }
 
 .main-title {
-  font-family: var(--primary-font);
-  font-style: normal;
   max-width: 650px;
-  @include font(44px, 900, 60px);
   text-align: center;
   margin: 0 auto;
   text-transform: uppercase;
   color: var(--secondary-color);
   margin-bottom: 30px;
-  @media screen and (min-width: 480px) {
-    font-family: var(--primary-font);
-    font-style: normal;
-    @include font(26px, 900, 42px);
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--secondary-color);
-  }
+  font-family: var(--primary-font);
+  font-style: normal;
+  @include font(26px, 900, 42px);
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--secondary-color);
+
   @media screen and (min-width: 1200px) {
     @include font(44px, 900, 60px);
   }
