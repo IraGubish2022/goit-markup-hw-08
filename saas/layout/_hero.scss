@@ -70,6 +70,9 @@
     text-transform: uppercase;
     color: var(--secondary-color);
   }
+  @media screen and (min-width: 1200px) {
+    @include font(44px, 900, 60px);
+  }
 }
 .modal-btn {
   transition-property: background-color;

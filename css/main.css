@@ -575,6 +575,13 @@ body {
     color: var(--secondary-color);
   }
 }
+@media screen and (min-width: 1200px) {
+  .main-title {
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 1.3636363636;
+  }
+}
 
 .modal-btn {
   transition-property: background-color;
