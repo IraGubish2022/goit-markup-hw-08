@@ -25,12 +25,15 @@
     }
   }
   .logo-footer {
-    margin-right: auto;
     margin-bottom: 20px;
       display: flex;
       justify-content: center;
       align-items: center;
       margin-bottom: 8px;
+
+      @media screen and (max-width: 1199px) {
+        margin-right: auto;
+      }
     
     @media screen and (min-width: 1200px) {
       justify-content: start;
