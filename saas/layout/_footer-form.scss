@@ -13,6 +13,7 @@
 
     @media screen and (min-width: 1200px) {
      display: flex;
+     margin: 0;
      flex-direction: row;
      align-items: end;
      margin-left: 93px;
@@ -84,6 +85,10 @@
     &:hover,
     &:focus {
     background-color: #188ce8;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 0;
   }
   }
   .footer-btn-send-icon {
